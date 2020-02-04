@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Construct Autosave",
     "version": "0.0.1",
-    "description": "Autosaves your Construct project.\n\nLogo created from a FontAwesome icon (https://fontawesome.com/license) and Construct's logo",
+    "description": "Autosaves your Construct project",
     "author": "Steven Haussmann",
     "icons": {
         "32": "icons/icon32.png",

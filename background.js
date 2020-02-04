@@ -1,5 +1,5 @@
 chrome.runtime.onInstalled.addListener(function () {
-    chrome.storage.sync.set({ frequency: 300 }, function () {
+    chrome.storage.sync.set({ frequency: 60000 }, function () {
         console.log("Configured autosave.");
     });
 });

@@ -1,20 +1,35 @@
 {
+    "manifest_version": 2,
     "name": "Construct Autosave",
     "version": "0.0.1",
-    "description": "Autosaves your Construct project",
-    "manifest_version": 2,
+    "description": "Autosaves your Construct project.\n\nLogo created from a FontAwesome icon (https://fontawesome.com/license) and Construct's logo",
+    "author": "Steven Haussmann",
+    "icons": {
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
     "permissions": [
         "storage",
         "activeTab"
     ],
     "background": {
-        "scripts": ["background.js"],
+        "scripts": [
+            "background.js"
+        ],
         "persistent": false
     },
     "content_scripts": [
         {
-            "matches": ["https://editor.construct.net/"],
-            "js": ["autosave.js"]
+            "matches": [
+                "https://editor.construct.net/"
+            ],
+            "js": [
+                "autosave.js"
+            ]
         }
-    ]
+    ],
+    "browser_action": {
+        "default_popup": "config.html"
+    }
 }

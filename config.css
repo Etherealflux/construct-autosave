@@ -1,0 +1,12 @@
+body {
+    font-size: 200%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+input {
+    transform: scale(2);
+}

@@ -6,7 +6,7 @@ function saveInterval(val) {
 }
 
 function updateDisplay(val) {
-    display.value = "Every " + (val / 60000) + " minutes";
+    display.value = "Every " + (val == 60000 ? " minute" : (val / 60000) + " minutes");
 }
 
 chrome.storage.sync.get(["interval"], function (results) {
